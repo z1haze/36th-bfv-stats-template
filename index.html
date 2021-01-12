@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="left">
+        <div class="top">
+            <div>
+                <div class="half">
+                    <div class="inner">
+                        <div class="title text-dark">Kills</div>
+                        <div class="value text-white" id="kills">5,009</div>
+                        <div class="percentile text-dark" id="kills-percentile">Top 21%</div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="inner">
+                        <div class="title text-dark">Deaths</div>
+                        <div class="value text-white" id="deaths">5,129</div>
+                        <div class="percentile text-dark" id="deaths-percentile">Top 15%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="half">
+                    <div class="inner">
+                        <div class="title text-dark">Accuracy</div>
+                        <div class="value text-white" id="accuracy">15.0%</div>
+                        <div class="percentile text-dark" id="accuracy-percentile">Top 38%</div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="inner">
+                        <div class="title text-dark">Kill Streak</div>
+                        <div class="value text-white" id="kill-streak">26</div>
+                        <div class="percentile text-dark" id="kill-streak-percentile">Top 15%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="title text-dark">Top Class</div>
+            <div class="value text-white text-capitalize" id="top-class">Assault</div>
+            <img id="top-class-img" class="top-class-img" src="img/assault.png" alt="">
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="top">
+            <div class="avatar" id="avatar"></div>
+            <div class="gamertag text-white" id="name">YourGamerTag</div>
+            <div class="hours text-dark" id="time-played">134 hours</div>
+        </div>
+
+        <div class="middle">
+            <div>
+                <div class="title">
+                    <div class="text-dark">Score/min</div>
+                    <div class="percentile text-dark" id="score-min-percentile">Bottom 49%</div>
+                </div>
+
+                <div class="value text-white" id="score-min">296.25</div>
+            </div>
+
+            <div>
+                <div class="title">
+                    <div class="text-dark">K/D</div>
+                    <div class="percentile text-dark" id="kd-percentile">Bottom 49%</div>
+                </div>
+
+                <div class="value text-white" id="kd">0.98</div>
+            </div>
+
+            <div>
+                <div class="title">
+                    <div class="text-dark">Win %</div>
+                    <div class="percentile text-dark" id="win-percentile">Bottom 33%</div>
+                </div>
+
+                <div class="value text-white" id="win">51.8%</div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="title text-white" id="rank">Colonel</div>
+            <div class="value text-dark">Rank <span id="level"></span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
