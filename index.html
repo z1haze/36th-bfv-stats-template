@@ -2,94 +2,184 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles2.css" rel="stylesheet">
 </head>
 <body>
-
 <div id="wrapper">
-    <div class="left">
-        <div class="top">
-            <div>
-                <div class="half">
-                    <div class="inner">
-                        <div class="title text-dark">Kills</div>
-                        <div class="value text-white" id="kills">5,009</div>
-                        <div class="percentile text-dark" id="kills-percentile">Top 21%</div>
+    <div class="row mb-1 pt-4 bg-semi">
+        <!-- top left -->
+        <div class="col-auto px-4">
+            <div class="d-flex">
+                <!-- rank? avatar? -->
+                <img id="avatar" src="https://placehold.it/110" height="110">
+
+                <div class="ml-3 d-flex flex-column justify-content-between flex-grow-1">
+                    <!-- global info -->
+                    <div>
+                        <h4 class="mb-0 text-shadow" id="gamertag">HiSparklnWiggls</h4>
+                        <span class="text-muted text-uppercase font-weight-bold" id="level">Colonel level 332</span>
                     </div>
-                </div>
-                <div class="half">
-                    <div class="inner">
-                        <div class="title text-dark">Deaths</div>
-                        <div class="value text-white" id="deaths">5,129</div>
-                        <div class="percentile text-dark" id="deaths-percentile">Top 15%</div>
+
+                    <!-- global progress -->
+                    <div>
+                        <div class="d-flex">
+                            <span class="mb-1 text-muted font-weight-bold text-uppercase">
+                                <small>Rank Progression</small>
+                            </span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" id="rank-progression" style="width: 45%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <div class="half">
-                    <div class="inner">
-                        <div class="title text-dark">Accuracy</div>
-                        <div class="value text-white" id="accuracy">15.0%</div>
-                        <div class="percentile text-dark" id="accuracy-percentile">Top 38%</div>
-                    </div>
+            <!-- top level individual stats -->
+            <div class="d-flex py-4">
+                <div class="pr-4">
+                    <div class="text-uppercase text-muted letters-tighter mb-1">k/d</div>
+                    <div class="letters-tight text-shadow">1.13</div>
                 </div>
-                <div class="half">
-                    <div class="inner">
-                        <div class="title text-dark">Kill Streak</div>
-                        <div class="value text-white" id="kill-streak">26</div>
-                        <div class="percentile text-dark" id="kill-streak-percentile">Top 15%</div>
-                    </div>
+
+                <div class="pr-4">
+                    <div class="text-uppercase text-muted letters-tighter mb-1">spm</div>
+                    <div class="letters-tight text-shadow">365</div>
+                </div>
+
+                <div class="pr-4">
+                    <div class="text-uppercase text-muted letters-tighter mb-1">kills</div>
+                    <div class="letters-tight text-shadow">16,255</div>
+                </div>
+
+                <div class="pr-4">
+                    <div class="text-uppercase text-muted letters-tighter mb-1">score</div>
+                    <div class="letters-tight text-shadow">98,004,782</div>
+                </div>
+
+                <div class="pr-4">
+                    <div class="text-uppercase text-muted letters-tighter mb-1">time played</div>
+                    <div class="letters-tight text-shadow">24D 12H 6M</div>
                 </div>
             </div>
         </div>
 
-        <div class="bottom">
-            <div class="title text-dark">Top Class</div>
-            <div class="value text-white text-capitalize" id="top-class">Assault</div>
-            <img id="top-class-img" class="top-class-img" src="img/assault.png" alt="">
+        <!-- top right -->
+        <div class="col player-stats d-table">
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Shot Accuracy:</div>
+                <div class="d-table-cell text-shadow px-2">24%</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Headshots:</div>
+                <div class="d-table-cell text-shadow px-2">9,999</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Revives:</div>
+                <div class="d-table-cell text-shadow px-2">4,000</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Heals:</div>
+                <div class="d-table-cell text-shadow px-2">14,000</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Resupplies:</div>
+                <div class="d-table-cell text-shadow px-2">4,000</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Best Kill Streak:</div>
+                <div class="d-table-cell text-shadow px-2">45</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Dogtags Taken:</div>
+                <div class="d-table-cell text-shadow px-2">454</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase text-muted">Savior Kills:</div>
+                <div class="d-table-cell text-shadow px-2">9,999</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
+
+            <div class="d-table-row">
+                <div class="d-table-cell text-uppercase pr-3 text-muted">Damage Dealt:</div>
+                <div class="d-table-cell text-shadow px-2">1,883,758</div>
+                <div class="d-table-cell text-right text-muted text-translucent"> Top 10%</div>
+            </div>
         </div>
     </div>
 
-    <div class="right">
-        <div class="top">
-            <div class="avatar" id="avatar"></div>
-            <div class="gamertag text-white" id="name">YourGamerTag</div>
-            <div class="hours text-dark" id="time-played">134 hours</div>
+    <!-- bottom -->
+    <div class="row bg-semi py-4">
+        <div class="pl-4 col-8">
+            <div class="text-muted text-uppercase font-weight-bold mb-3">Playtime Breakdown</div>
+
+            <div class="d-flex align-items-center mb-2">
+                <img src="img/support.png" alt="Support" width="15"/>
+                <div class="col-3 text-uppercase font-size-large font-weight-normal text-shadow">Support</div>
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-auto text-shadow">45%</div>
+            </div>
+
+            <div class="d-flex align-items-center mb-2">
+                <img src="img/assault.png" alt="Support" width="15"/>
+                <div class="col-3 text-uppercase font-size-large font-weight-normal text-shadow">Assault</div>
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-auto text-shadow">75%</div>
+            </div>
+
+            <div class="d-flex align-items-center mb-2">
+                <img src="img/medic.png" alt="Support" width="15"/>
+                <div class="col-3 text-uppercase font-size-large font-weight-normal text-shadow">Medic</div>
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-auto text-shadow">66%</div>
+            </div>
+
+            <div class="d-flex align-items-center mb-2">
+                <img src="img/recon.png" alt="Support" width="15"/>
+                <div class="col-3 text-uppercase font-size-large font-weight-normal text-shadow">Recon</div>
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-auto text-shadow">90%</div>
+            </div>
         </div>
 
-        <div class="middle">
-            <div>
-                <div class="title">
-                    <div class="text-dark">Score/min</div>
-                    <div class="percentile text-dark" id="score-min-percentile">Bottom 49%</div>
+        <div class="col">
+            <div class="text-muted text-uppercase font-weight-bold mb-4">&nbsp;</div>
+
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <img src="https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/81/46/Rank_Bitmap_06-512e6514.png" alt="" id="rank-img" height="100">
                 </div>
-
-                <div class="value text-white" id="score-min">296.25</div>
             </div>
-
-            <div>
-                <div class="title">
-                    <div class="text-dark">K/D</div>
-                    <div class="percentile text-dark" id="kd-percentile">Bottom 49%</div>
-                </div>
-
-                <div class="value text-white" id="kd">0.98</div>
-            </div>
-
-            <div>
-                <div class="title">
-                    <div class="text-dark">Win %</div>
-                    <div class="percentile text-dark" id="win-percentile">Bottom 33%</div>
-                </div>
-
-                <div class="value text-white" id="win">51.8%</div>
-            </div>
-        </div>
-
-        <div class="bottom">
-            <div class="title text-white" id="rank">Colonel</div>
-            <div class="value text-dark">Rank <span id="level"></span></div>
         </div>
     </div>
 </div>

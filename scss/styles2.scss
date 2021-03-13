@@ -1,0 +1,24 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'layout';
+@import 'typography';
+@import 'progress';
+
+.player-stats {
+  font-size: .85rem;
+
+  .form-row {
+    margin-bottom: .1rem;
+
+    > div {
+      white-space: nowrap;
+    }
+  }
+
+  .text-translucent {
+    font-size: 85%;
+  }
+}
