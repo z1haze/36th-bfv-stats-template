@@ -164,7 +164,12 @@ body {
   }
 
   .bottom {
-    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+
+    #rank {
+      padding-top: .5rem;
+    }
 
     .title {
       margin-bottom: .75rem;
@@ -173,6 +178,12 @@ body {
     .title,
     .value {
       text-align: center;
+    }
+
+    #rank-img {
+      width: 75px;
+      height: 75px;
+      background-size: cover;
     }
   }
 }
